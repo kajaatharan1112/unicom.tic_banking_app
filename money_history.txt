@@ -1,0 +1,5 @@
+2025-05-07,543981,deposit,money=30000,blance=30000,who edet-161021,
+2025-05-07,999353,deposit,money=20000,blance=20000,who edet-190002,
+2025-05-07,455727,deposit,money=20000,blance=20000,who edet-934494,
+2025-05-07,837725,deposit,money=30000,blance=30000,who edet-934494,
+2025-05-07,573585,deposit,money=20000,blance=20000,who edet-934494,
