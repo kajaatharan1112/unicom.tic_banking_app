@@ -273,12 +273,12 @@ def detail_changer(people,username,password,):
     if people=="user":
         fill=open("user_data.txt","w")
         for i in data:
-            fill.write(f"{i},\n")
+            fill.write(f"{i}")
         fill.close()
     else:
         fill=open("admin_data.txt","w")
         for i in data:
-            fill.write(f"{i},\n")
+            fill.write(f"{i}")
         fill.close()
         
     
@@ -761,7 +761,7 @@ while (True):
                                     print(f"nic number={m[3]}")
                                     print()
                         
-                            elif funcation_key==7:
+                            elif key==7:
                                 i=pasword_username_chack("admin",admin_username,admin_password)
                                 print()
                                 print(f"your name={i[0]}")
