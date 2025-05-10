@@ -337,7 +337,7 @@ while (True):
             print("Acount holder name pasword change--------[1]")
             print("Deposit_money----------------------------[2]")
             print("withrow money----------------------------[3]")
-            print("money transfer---------------------------[4]")
+            #print("money transfer---------------------------[4]")
             print("user data--------------------------------[5]")
             print("acount blance----------------------------[6]")
             print("user history-----------------------------[7]")
@@ -360,6 +360,9 @@ while (True):
                 print("\033[31m---ERROR____Invalide Key Please Try Again---- \033[0m")
                 continue
             
+            elif funcation_key==4:
+                print("\033[31m---ERROR____Invalide Key Please Try Again---- \033[0m")
+                continue
             else:
                 print("\033[34m----------Enter Your Banking Details-------\033[0m")
                 name=input("Enter tha acount holder name=")
@@ -418,33 +421,33 @@ while (True):
                 print("\033[34m---Your Curant Acount Blance---\033[0m")
                 print(new_blance)
             
-            elif funcation_key==4:
-                acount_number2=int(input("Enter tha transfer acount number="))
-                acount_number3=int(input("Conform yuor transfre acount number="))
-                blance1=pasword_username_chack(name,name,name,acount_number2)
-                if blance==0:
-                    print("\033[31m---ERROR____Invalid Acount Number -------Pleace Try Again----\033[0m")
-                    continue
-                else:
-                    pass
+            # elif funcation_key==4:
+            #     acount_number2=int(input("Enter tha transfer acount number="))
+            #     acount_number3=int(input("Conform yuor transfre acount number="))
+            #     blance1=pasword_username_chack(name,name,name,acount_number2)
+            #     if blance==0:
+            #         print("\033[31m---ERROR____Invalid Acount Number -------Pleace Try Again----\033[0m")
+            #         continue
+            #     else:
+            #         pass
                 
-                if acount_number2==acount_number3:
-                    try:
-                        money=int(input("inter your withrowl amount="))
-                    except ValueError:
-                        print("\033[31m---ERROR____Enter Money Value Only---- [UCB]\033[0m")
-                        continue
-                    if money<blance:
-                        print("--------------")
-                        new_blance=blance_edeter(name,acount_number,money,"withrow")
-                        new_blance1=blance_edeter(name,acount_number2,money,"deposit")
-                        print("user new blance=",new_blance)
-                    else:
-                        print("\033[31m---ERROR____Invalid Transfer ----Please Try Again--- [UCB]\033[0m")
-                        continue
-                else:
-                    print("\033[31m---ERROR____Acount Number Confomation is rong----------Please Try Again---- \033[0m")
-                    continue
+            #     if acount_number2==acount_number3:
+            #         try:
+            #             money=int(input("inter your withrowl amount="))
+            #         except ValueError:
+            #             print("\033[31m---ERROR____Enter Money Value Only---- [UCB]\033[0m")
+            #             continue
+            #         if money<blance:
+            #             print("--------------")
+            #             new_blance=blance_edeter(name,acount_number,money,"withrow")
+            #             new_blance1=blance_edeter(name,acount_number2,money,"deposit")
+            #             print("user new blance=",new_blance)
+            #         else:
+            #             print("\033[31m---ERROR____Invalid Transfer ----Please Try Again--- [UCB]\033[0m")
+            #             continue
+            #     else:
+            #         print("\033[31m---ERROR____Acount Number Confomation is rong----------Please Try Again---- \033[0m")
+            #         continue
             
             elif funcation_key==5:
                 i=pasword_username_chack("user",name,acount_password)
@@ -526,7 +529,7 @@ while (True):
                             print("Create an acount-------[1]")
                             print("Deposit_money----------[2]")
                             print("Withrow money----------[3]")
-                            print("Money transfer---------[4]")
+                            #print("Money transfer---------[4]")
                             print("User data--------------[5]")
                             print("Acount blance----------[6]")
                             print("User history-----------[7]")
@@ -604,30 +607,33 @@ while (True):
                                 print(new_blance)
                             
                             elif funcation_key==4:
-                                acount_number2=int(input("Enter tha transfer acount number      ="))
-                                acount_number3=int(input("Conform yuor transfre acount number   ="))
-                                blance1=pasword_username_chack(name,name,name,acount_number2)
-                                if blance1==0:
-                                    print("\033[31m----invalid acount number ------- TRY AGAIN----\033[0m")
-                                    continue
-                                else:
-                                    pass
-                                if acount_number2==acount_number3:
-                                    try:
-                                        money=int(input("Enter your Transfer amount="))
-                                    except ValueError:
-                                        print("\033[31m--ERROR---------Enter The Money value only---\033[0m")
-                                        continue
-                                    if money<blance:
-                                        new_blance=blance_edeter(admin_id,acount_number,money,"withrow")
-                                        new_blance1=blance_edeter(admin_id,acount_number2,money,"deposit")
-                                        print("user new blance=",new_blance)
-                                    else:
-                                        print("\033[31m--ERROR---------Invalid Acount blance------Your Tranfre faild----Try again---\033[0m")
-                                        continue
-                                else:
-                                    print("==========================transfer acount confamation is rong===========================")
-                                    continue
+                                 print("\033[31m---ERROR____Invalide Key Please Try Again---- \033[0m")
+                                 continue
+                            # #elif funcation_key==4:     erorr cant fount---------
+                                # acount_number2=int(input("Enter tha transfer acount number      ="))
+                                # acount_number3=int(input("Conform yuor transfre acount number   ="))
+                                # blance1=pasword_username_chack(name,name,name,acount_number2)
+                                # if blance1==0:
+                                #     print("\033[31m----invalid acount number ------- TRY AGAIN----\033[0m")
+                                #     continue
+                                # else:
+                                #     pass
+                                # if acount_number2==acount_number3:
+                                #     try:
+                                #         money=int(input("Enter your Transfer amount="))
+                                #     except ValueError:
+                                #         print("\033[31m--ERROR---------Enter The Money value only---\033[0m")
+                                #         continue
+                                #     if money<blance:
+                                #         new_blance=blance_edeter(admin_id,acount_number,money,"withrow")
+                                #         new_blance1=blance_edeter(admin_id,acount_number2,money,"deposit")
+                                #         print("user new blance=",new_blance)
+                                #     else:
+                                #         print("\033[31m--ERROR---------Invalid Acount blance------Your Tranfre faild----Try again---\033[0m")
+                                #         continue
+                                # else:
+                                #     print("==========================transfer acount confamation is rong===========================")
+                                #     continue
                             
                             elif funcation_key==5:
                                 i=pasword_username_chack("user",name,acount_password)
