@@ -194,18 +194,15 @@ def blance_edeter(people,acount_no,money,funcation):
     fill=open("blance.txt","r")
     data=fill.readlines()
     fill.close()
-    
     blance=0
-    if acount_no!=1112:
-        for i in data:
-            m=i.split(",")
-            if m[1]==acount_no:
-                blance=int(m[2])
-                data.remove(i)
-            else:
-                pass
-    else:
-        pass
+    for i in data:
+        m=i.split(",")
+        if m[1]==acount_no:
+            blance=int(m[2])
+            data.remove(i)
+        else:
+            pass
+    
     if funcation=="show":
         return data
     elif funcation=="withrow":
@@ -454,8 +451,8 @@ while (True):
                 print()
                 print(f"Acoun holder name---{i[0]}")
                 print(f"Acoun number--------{i[1]}")
-                print(f"Age-----------------{i[2]}")
-                print(f"NIc_Number----------{i[3]}")
+                print(f"Age-----------------{i[3]}")
+                print(f"NIc_Number----------{i[4]}")
                 print()
 
             elif funcation_key==6:
@@ -637,8 +634,8 @@ while (True):
                                 print()
                                 print(f"acoun holder name===={i[0]}")
                                 print(f"acoun number========={i[1]}")
-                                print(f"age=================={i[2]}")
-                                print(f"nic number==========={i[3]}")
+                                print(f"age=================={i[3]}")
+                                print(f"nic number==========={i[4]}")
                                 print()
 
                             elif funcation_key==6:
