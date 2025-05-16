@@ -720,8 +720,8 @@ while (True):
                                     print()
                                     print(f"acoun holder name={m[0]}")
                                     print(f"acoun number={m[1]}")
-                                    print(f"age={m[2]}")
-                                    print(f"nic number={m[3]}")
+                                    print(f"age={m[3]}")
+                                    print(f"nic number={m[4]}")
                                     print()
                                     
                             elif key==4:
@@ -747,8 +747,8 @@ while (True):
                                     print()
                                     print(f"acount holder name={m[0]}")
                                     print(f"acount number ={m[1]}")
-                                    print(f"age={m[2]}")
-                                    print(f"nic number={m[3]}")
+                                    print(f"age={m[3]}")
+                                    print(f"nic number={m[4]}")
                                     print()
                                     
                             elif key==6:
@@ -760,8 +760,8 @@ while (True):
                                     print()
                                     print(f"admin name={m[0]}")
                                     print(f"admin id={m[1]}")
-                                    print(f"age={m[2]}")
-                                    print(f"nic number={m[3]}")
+                                    print(f"age={m[3]}")
+                                    print(f"nic number={m[4]}")
                                     print()
                         
                             elif key==7:
@@ -769,8 +769,8 @@ while (True):
                                 print()
                                 print(f"your name={i[0]}")
                                 print(f"your id number={i[1]}")
-                                print(f"age={i[2]}")
-                                print(f"nic number={i[3]}")
+                                print(f"age={i[3]}")
+                                print(f"nic number={i[4]}")
                                 print()   
                                  
                             elif key==8:
