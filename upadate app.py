@@ -61,7 +61,7 @@ def paswod_maker():
         if len(str(pasword)) == 6:
             return pasword
         else:
-            print("\033[31m--------------ERROR----invalid password----TRY AGAIN---\033[0m")
+            print("\033[31m--------------ERROR----invalid password lenth minemam 6 diget -----TRY AGAIN---\033[0m")
             
             
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -310,8 +310,17 @@ def acount_number_user_name(username,ac_number):
         else:
             pass
 
-
-            
+def custamar_acount_list():
+    fill=open("blance.txt","r")
+    data=fill.readlines()
+    fill.close()
+    for i in data:
+        m=i.split(",")
+        print()
+        print(f"Account Number:  {m[1]}")
+        print(f"Account blance:  Rs_{m[2]}")
+    
+        
 
            
 # ###################################################################################user inter face-#########################################################################################################################################-
@@ -673,7 +682,7 @@ while (True):
                             print()
                             print("                          ACTVITY MANU")
                             print()
-                            print("ALL-acount holder-blance list----------[1]")
+                            print("customer acount list----------[1]")
                             print("bank transtation history---------------[2]")
                             print("all custmor details list---------------[3]")
                             print("change admin password,username---------[4]")
@@ -696,13 +705,14 @@ while (True):
                                 continue
                             
                             elif key==1:
-                                fill=open("blance.txt","r")
-                                data=fill.readlines()
-                                fill.close()
-                                for i in data:
-                                    m=i.split(",")
-                                    print(f"acount number={m[1]},blance={m[2]}")
-                                    print()
+                                # fill=open("blance.txt","r")
+                                # data=fill.readlines()
+                                # fill.close()
+                                # for i in data:
+                                #     m=i.split(",")
+                                #     print(f"acount number={m[1]},blance={m[2]}")
+                                #     print()
+                                custamar_acount_list()
                                     
                             elif key==2:
                                 date=input("enter tha date year-month-date=")
@@ -718,10 +728,10 @@ while (True):
                                 for i in data:
                                     m=i.split(",")
                                     print()
-                                    print(f"acoun holder name={m[0]}")
-                                    print(f"acoun number={m[1]}")
-                                    print(f"age={m[3]}")
-                                    print(f"nic number={m[4]}")
+                                    print(f"acoun holder name   ={m[0]}")
+                                    print(f"acoun number        ={m[1]}")
+                                    print(f"age                 ={m[3]}")
+                                    print(f"nic number          ={m[4]}")
                                     print()
                                     
                             elif key==4:
@@ -732,10 +742,10 @@ while (True):
                             elif key==5:
                                 i=pasword_username_chack("admin",admin_username,admin_password)
                                 print()
-                                print(f"admin name={i[0]}")
-                                print(f"admin id number={i[1]}")
-                                print(f"age={i[2]}")
-                                print(f"nic number={i[3]}")
+                                print(f"admin name        ={i[0]}")
+                                print(f"admin id number   ={i[1]}")
+                                print(f"age               ={i[2]}")
+                                print(f"nic number        ={i[3]}")
                                 print()
                                 
                             elif key==3:
@@ -745,10 +755,10 @@ while (True):
                                 for i in data:
                                     m=i.split(",")
                                     print()
-                                    print(f"acount holder name={m[0]}")
-                                    print(f"acount number ={m[1]}")
-                                    print(f"age={m[3]}")
-                                    print(f"nic number={m[4]}")
+                                    print(f"acount holder name  ={m[0]}")
+                                    print(f"acount number       ={m[1]}")
+                                    print(f"age                 ={m[3]}")
+                                    print(f"nic number          ={m[4]}")
                                     print()
                                     
                             elif key==6:
@@ -758,19 +768,19 @@ while (True):
                                 for i in data:
                                     m=i.split(",")
                                     print()
-                                    print(f"admin name={m[0]}")
-                                    print(f"admin id={m[1]}")
-                                    print(f"age={m[3]}")
-                                    print(f"nic number={m[4]}")
+                                    print(f"admin name   ={m[0]}")
+                                    print(f"admin id     ={m[1]}")
+                                    print(f"age          ={m[3]}")
+                                    print(f"nic number   ={m[4]}")
                                     print()
                         
                             elif key==7:
                                 i=pasword_username_chack("admin",admin_username,admin_password)
                                 print()
-                                print(f"your name={i[0]}")
-                                print(f"your id number={i[1]}")
-                                print(f"age={i[3]}")
-                                print(f"nic number={i[4]}")
+                                print(f"your name       ={i[0]}")
+                                print(f"your id number  ={i[1]}")
+                                print(f"age             ={i[3]}")
+                                print(f"nic number      ={i[4]}")
                                 print()   
                                  
                             elif key==8:
